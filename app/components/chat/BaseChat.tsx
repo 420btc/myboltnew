@@ -136,7 +136,7 @@ export const BaseChat = React.forwardRef<HTMLDivElement, BaseChatProps>(
                   <ClientOnly>
                     {() => (
                       <SendButton
-                        show={input.length > 0 || isStreaming}
+                        show={true}
                         isStreaming={isStreaming}
                         onClick={(event) => {
                           if (isStreaming) {
